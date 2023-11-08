@@ -9,7 +9,6 @@ body {
 
 }
 
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
@@ -23,14 +22,19 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
 }
 
-.section__container {
+.product {
 
-    margin-top: 60px;
-    margin-bottom: 108px;
+    padding-top: 60px;
 
 }
 
-.section__card_macbook {
+.other-products {
+
+    padding-bottom: 108px;
+
+}
+
+.product {
 
     width: 1110px;
     margin-bottom: 90px;
@@ -38,15 +42,20 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.card__details {
+.product__row {
+
+    display: flex;
+
+}
+
+.product__description {
 
     display: flex;
     flex-direction: column;
 
-
 }
 
-.card__title {
+.product__title {
 
     font-size: 28px;
     font-weight: 700;
@@ -56,7 +65,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.card__price {
+.product__price {
 
     font-size: 24px;
     font-weight: 600;
@@ -66,23 +75,31 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.into-a-basket {
+.button {
 
-    width: 130px;
-    height: 46px;
+    display: inline-block;
     padding: 13px 20px;
 
-    background: #000;
     border-radius: 6px;
+    border: 3px solid rgba(126.08, 155.18, 189.13, 0.30);
 
-    color: #fff;
+    color: #7E9BBD;
     font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
+
+}
+
+.button--dark {
+
+    background: #000;
+    border: none;
+    color: #fff;
     font-weight: 700;
 
 }
 
-.card__text {
+.product__article {
 
     color: #000;
     font-size: 18px;
@@ -93,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.card__text a {
+.product__article a {
 
     color: #000;
     font-size: 18px;
@@ -103,7 +120,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.card__text p {
+.product__article p {
 
     margin-bottom: 30px;
 
@@ -111,12 +128,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ========================================  ================================= */
 
-.section__card_product {
 
-
-}
-
-.cards_title {
+.other-products__title {
 
     text-align:center;
     color: #000;
@@ -127,22 +140,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.section__cards {
+.other-products__card-row {
 
     display: flex;
     justify-content: space-between;
     margin-top: 46px;
 
-
 }
 
-.section__cards .cards:not(:last-child) {
+.other-products__card-row .other-products__card:not(:last-child) {
 
 	margin-right: 30px;
 
 }
 
-.cards {
+.other-products__card {
 
 	width: 350px;
 	height: 410px;
@@ -151,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.cards__img {
+.other-products__card-img {
 
 	display: block;
 	margin-bottom: 20px;
@@ -161,7 +173,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.cards__title {
+.other-products__card-title {
 
     min-height: 48px;
     color: #000;
@@ -171,9 +183,14 @@ h1, h2, h3, h4, h5, h6, p {
     padding-left: 30px;
     margin-bottom: 10px;
 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
 }
 
-.cards__details {
+.other-products__card-details {
 
 	display: flex;
 	justify-content: space-between;
@@ -183,7 +200,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.cards__price {
+.other-products__card-price {
 
     color: #7E9BBD;
     font-size: 20px;
@@ -191,44 +208,5 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.2;
 
 }
-
-.see {
-
-    padding: 13px 20px;
-
-    border-radius: 6px;
-    display: inline-flex;
-    border: 3px solid rgba(126.08, 155.18, 189.13, 0.30);
-
-    color: #7E9BBD;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
